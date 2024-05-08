@@ -101,3 +101,30 @@ exports.isInstructor = (req, res, next) => {
     }
 }
 
+
+
+// ---------- IS ADMIN --------------
+exports.isAdmin = (req, res, next) => {
+    try {
+
+        if (req.user.accountType != 'Admin') {
+            return res.status(401).json({
+                success: false,
+                messgae: 'This Page is protected only for Admin'
+            })
+        }
+
+        next();
+    }
+    catch (error) {
+        console.log('Error while cheching user validity with Admin accountType');
+        console.log(error);
+        return res.status(500).json({
+            success: false,
+            error: error.message,
+            messgae: 'Error while cheching user validity with Admin accountType'
+        })
+    }
+}
+
+
