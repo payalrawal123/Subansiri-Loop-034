@@ -11,7 +11,7 @@ const mailSender = require('../utils/mailSender');
 const otpTemplate = require('../mail/templates/emailVerificationTemplate');
 const { passwordUpdated } = require("../mail/templates/passwordUpdate");
 
-// ================ SEND-OTP For Email Verification ================
+// ------------------ SEND-OTP For Email Verification -----------------
 exports.sendOTP = async (req, res) => {
     try {
 
@@ -44,7 +44,7 @@ exports.sendOTP = async (req, res) => {
         // send otp in mail
         await mailSender(email, 'OTP Verification Email', otpTemplate(otp, name));
 
-        // create an entry for otp in DB
+        // creating an entry for otp in DB
         const otpBody = await OTP.create({ email, otp });
         // console.log('otpBody - ', otpBody);
 
@@ -69,7 +69,7 @@ exports.sendOTP = async (req, res) => {
 }
 
 
-// ================ SIGNUP ================
+// ---------- SIGNUP -----------------
 exports.signup = async (req, res) => {
     try {
         // extract data 
@@ -107,11 +107,6 @@ exports.signup = async (req, res) => {
         const recentOtp = await OTP.findOne({ email }).sort({ createdAt: -1 }).limit(1);
         // console.log('recentOtp ', recentOtp)
 
-        // .sort({ createdAt: -1 }): 
-        // It's used to sort the results based on the createdAt field in descending order (-1 means descending). 
-        // This way, the most recently created OTP will be returned first.
-
-        // .limit(1): It limits the number of documents returned to 1. 
 
 
         // if otp not found
@@ -166,7 +161,7 @@ exports.signup = async (req, res) => {
 }
 
 
-// ================ LOGIN ================
+// -------------- LOGIN ------------------
 exports.login = async (req, res) => {
     try {
         const { email, password } = req.body;
@@ -195,7 +190,7 @@ exports.login = async (req, res) => {
             const payload = {
                 email: user.email,
                 id: user._id,
-                accountType: user.accountType // This will help to check whether user have access to route, while authorzation
+                accountType: user.accountType 
             };
 
             // Generate token 
@@ -205,7 +200,7 @@ exports.login = async (req, res) => {
 
             user = user.toObject();
             user.token = token;
-            user.password = undefined; // we have remove password from object, not DB
+            user.password = undefined; 
 
 
             // cookie
