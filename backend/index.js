@@ -1,5 +1,5 @@
 const express = require("express");
-const { connectionToDb } = require("./config/database");
+const { connectDB } = require("./config/database");
 const { cloudinaryConnect } = require("./config/cloudinary");
 require("dotenv").config();
 
@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.listen(PORT, async (req, res) => {
   try {
-    await connectionToDb();
+    await connectDB();
     await cloudinaryConnect();
     console.log(`Server running at port ${PORT}`);
   } catch (error) {

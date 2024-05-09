@@ -14,5 +14,5 @@ function cloudinaryConnect() {
   }
 }
 module.exports = {
-    cloudinaryConnect
+  cloudinaryConnect
 }
