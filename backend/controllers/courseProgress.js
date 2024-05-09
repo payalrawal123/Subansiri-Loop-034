@@ -4,7 +4,7 @@ const SubSection = require("../models/subSection")
 const CourseProgress = require("../models/courseProgress")
 
 
-// ================ update Course Progress ================
+// ----------- update Course Progress ----------------
 exports.updateCourseProgress = async (req, res) => {
   const { courseId, subsectionId } = req.body
   const userId = req.user.id
@@ -54,6 +54,7 @@ exports.updateCourseProgress = async (req, res) => {
 // ================ get Progress Percentage ================
 // exports.getProgressPercentage = async (req, res) => {
 //   const { courseId } = req.body
+
 //   const userId = req.user.id
 
 //   if (!courseId) {
@@ -63,6 +64,7 @@ exports.updateCourseProgress = async (req, res) => {
 //   try {
 //     // Find the course progress document for the user and course
 //     let courseProgress = await CourseProgress.findOne({
+
 //       courseID: courseId,
 //       userId: userId,
 //     })
@@ -70,6 +72,7 @@ exports.updateCourseProgress = async (req, res) => {
 //         path: "courseID",
 //         populate: {
 //           path: "courseContent",
+
 //         },
 //       })
 //       .exec()
