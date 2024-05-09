@@ -23,6 +23,29 @@ app.use(
       tempFileDir: '/tmp'
   })
 )
+// routes
+const userRoutes = require('./routes/user');
+const profileRoutes = require('./routes/profile');
+const paymentRoutes = require('./routes/payments');
+const courseRoutes = require('./routes/course');
+
+
+// mount route
+app.use('/api/v1/auth', userRoutes);
+app.use('/api/v1/profile', profileRoutes);
+app.use('/api/v1/payment', paymentRoutes);
+app.use('/api/v1/course', courseRoutes);
+
+// Default Route
+app.get('/', (req, res) => {
+  // console.log('Your server is up and running..!');
+  res.send(`<div>
+  This is Default Route  
+  <p>Everything is OK</p>
+  </div>`);
+})
+
+
 
 app.listen(PORT, async (req, res) => {
   try {
