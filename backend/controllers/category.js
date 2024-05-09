@@ -5,7 +5,9 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max)
 }
 
-// ================ create Category ================
+
+
+// ---------- create Category -------------
 exports.createCategory = async (req, res) => {
     try {
         // extract data
@@ -31,6 +33,7 @@ exports.createCategory = async (req, res) => {
     catch (error) {
         console.log('Error while creating Category');
         console.log(error);
+
         res.status(500).json({
             success: false,
             message: 'Error while creating Category',
@@ -62,6 +65,8 @@ exports.showAllCategories = async (req, res) => {
         })
     }
 }
+
+
 
 
 
