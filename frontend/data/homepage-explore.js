@@ -33,6 +33,7 @@ export const HomePageExplore = [
             },
             {
                 heading : "CSS",
+                
                 description : "This course explores advanced topics in HTML5 and CSS3, including animations, transitions, and layout techniques",
                 level : 'Beginner',
                 lessionNumber : 6
