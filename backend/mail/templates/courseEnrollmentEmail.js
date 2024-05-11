@@ -1,5 +1,5 @@
 exports.courseEnrollmentEmail = (courseName, name) => {
-    return `<!DOCTYPE html>
+  return `<!DOCTYPE html>
     <html>
     
     <head>
@@ -67,7 +67,7 @@ exports.courseEnrollmentEmail = (courseName, name) => {
     
     <body>
         <div class="container">
-            <a href=""><img class="logo" src="https://picjj.com/images/2024/05/09/sflBR.png"
+            <a href="#"><img class="logo" src="https://picjj.com/images/2024/05/09/sflBR.png"
                     alt="LearnLang Logo"></a>
             <div class="message">Course Registration Confirmation</div>
             <div class="body">
@@ -76,12 +76,12 @@ exports.courseEnrollmentEmail = (courseName, name) => {
                     are excited to have you as a participant!</p>
                 <p>Please log in to your learning dashboard to access the course materials and start your learning journey.
                 </p>
-                <a class="cta" href="https://study-notion-mern-stack.netlify.app/dashboard/enrolled-courses">Go to Dashboard</a>
+                <a class="cta" href="#">Go to Dashboard</a>
             </div>
             <div class="support">If you have any questions or need assistance, please feel free to reach out to us at 
-            <a href="mailto:gadeaniruddha2@gmail.com">gadeaniruddha2@gmail.com</a>. We are here to help!</div>
+            <a href="mailto:zeemeezan6252350@gmail.com">zeemeezan6252350@gmail.com</a>. We are here to help!</div>
         </div>
     </body>
     
     </html>`;
-  };
+};
