@@ -7,6 +7,7 @@ import Loading from '../components/common/Loading'
 const Dashboard = () => {
 
     const { loading: authLoading } = useSelector((state) => state.auth);
+    
     const { loading: profileLoading } = useSelector((state) => state.profile);
 
 
