@@ -79,20 +79,10 @@ const About = () => {
                 Our Founding Story
               </h1>
               <p className="text-base font-medium text-richblack-300 lg:w-[95%]">
-                Our e-learning platform was born out of a shared vision and
-                passion for transforming education. It all began with a group of
-                educators, technologists, and lifelong learners who recognized
-                the need for accessible, flexible, and high-quality learning
-                opportunities in a rapidly evolving digital world.
+                A group of teachers, tech enthusiasts, and lifelong learners teamed up to create an online learning hub. They felt the urge to revolutionize education, realizing that it needed to adapt to the fast-paced digital era. Their platform aimed to make learning accessible, flexible, and top-notch in quality.
               </p>
               <p className="text-base font-medium text-richblack-300 lg:w-[95%]">
-                As experienced educators ourselves, we witnessed firsthand the
-                limitations and challenges of traditional education systems. We
-                believed that education should not be confined to the walls of a
-                classroom or restricted by geographical boundaries. We
-                envisioned a platform that could bridge these gaps and empower
-                individuals from all walks of life to unlock their full
-                potential.
+                Having worked in education themselves, they saw the flaws of traditional systems firsthand. They strongly believed that learning shouldn't be confined to physical classrooms or restricted by location. Their vision was to build a platform that could break down these barriers and empower people from diverse backgrounds to reach their full potential.
               </p>
             </motion.div>
 
