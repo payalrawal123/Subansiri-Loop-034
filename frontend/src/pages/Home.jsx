@@ -84,7 +84,7 @@ const Home = () => {
     <React.Fragment>
       {/* background random image */}
       <div>
-        <div className="w-full h-[450px] md:h-[650px] absolute left-0 opacity-[0.6] overflow-hidden object-cover ">
+        <div className="w-full h-[450px] md:h-[650px] absolute left-0  overflow-hidden object-cover ">
           <img
             src={backgroundImg}
             alt="Background"
@@ -129,7 +129,7 @@ const Home = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.1 }}
-            className=" mt-4 w-[90%] text-center text-base lg:text-lg font-bold text-richblack-200"
+            className=" mt-4 w-[90%] text-center text-base lg:text-lg font-bold text-white"
           >
             With our online coding courses, you can learn at your own pace, from
             anywhere in the world, and get access to a wealth of resources,
@@ -289,7 +289,6 @@ const Home = () => {
         <Footer />
 
         {/* chat bot */}
-        <ChatBotComponent />
       </div>
     </React.Fragment>
   );

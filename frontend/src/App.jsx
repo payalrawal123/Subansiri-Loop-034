@@ -36,6 +36,7 @@ import VideoDetails from "./components/core/ViewCourse/VideoDetails";
 import { ACCOUNT_TYPE } from "./utils/constants";
 
 import { HiArrowNarrowUp } from "react-icons/hi";
+import ChatBotComponent from "./components/common/chatBot";
 
 function App() {
   const { user } = useSelector((state) => state.profile);
@@ -77,8 +78,8 @@ function App() {
       {/* go upward arrow */}
       <button
         onClick={() => window.scrollTo(0, 0)}
-        className={`bg-yellow-25 hover:bg-yellow-50 hover:scale-110 p-3 text-lg text-black rounded-2xl fixed right-3 z-10 duration-500 ease-in-out ${
-          showArrow ? "bottom-6" : "-bottom-24"
+        className={`bg-yellow-25 hover:bg-yellow-50 hover:scale-110 p-3 text-lg text-black rounded-2xl fixed right-24 z-10 duration-500 ease-in-out ${
+          showArrow ? "bottom-10" : "-bottom-24"
         } `}
       >
         <HiArrowNarrowUp />
@@ -195,6 +196,7 @@ function App() {
         {/* Page Not Found (404 Page ) */}
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+      <ChatBotComponent/>
     </div>
   );
 }

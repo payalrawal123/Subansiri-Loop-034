@@ -101,7 +101,7 @@ export default function Sidebar() {
                   btn2Handler: () => setConfirmationModal(null),
                 })
               }
-              className=" "
+              className=""
             >
               <div className="flex items-center gap-x-2 px-8 py-2 text-sm font-medium text-richblack-300 hover:bg-richblack-700 relative">
                 <VscSignOut className="text-lg" />
