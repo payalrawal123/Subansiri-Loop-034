@@ -3,7 +3,7 @@
 LearnLang
 
 ## Introduction
-
+Introducing Learnlang,built for masai construct week block 35 .Learnlang is a learning website.it is a fully functional ed-tech platform that enables users to create, consume, and rate educational content.user-friendly features including robust registration and authentication.
 ## Project Type
 
 MERN FullStack
@@ -212,8 +212,18 @@ Subansiri-Loop-034
 
 ## Video Walkthrough of the project
 <a href="https://drive.google.com/file/d/1JGyjXze1eX8cO5SHLI5fS1hgYAv4iVcu/view" target="_blank">Presentation Video</a>
-## Features
 
+
+## Features
+- LearnLang: A dynamic learning platform designed for students and instructors alike.
+- Features robust user and admin registration/authentication functionalities.
+- Enables CRUD operations for both students and instructors.
+- Incorporates a chatbot for enhanced user interaction.
+- Includes a convenient scroll-to-top feature for seamless navigation.
+- Allows students to purchase courses and submit reviews effortlessly.
+- Tech stack: HTML, CSS, React, Tailwind, MongoDB, Node.js.
+- My responsibilities: Developed Customer and Category modules, managed exceptions and validations,  implemented Spring Security, and maintained the GitHub repository.
+- Collaborative project completed by a team of four members within five days.
 ## design decisions or assumptions
 
 ## Installation & Getting started
