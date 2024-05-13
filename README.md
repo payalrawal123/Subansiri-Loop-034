@@ -253,16 +253,18 @@ npm run dev (for frontend)
 
 ## Credentials
 
-Admin Credentials
+Teacher Credentials
 
 ```bash
-
+Teacher ~ furqanspn@gmail.com
+password ~ furqan@123
 ```
 
-User Credential
+student Credential
 
 ```Bash
-
+Student ~ zeeshanahmad6871@gmail.com
+Password ~ zeeshan@123
 ```
 
 ## API Endpoints
