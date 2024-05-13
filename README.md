@@ -228,9 +228,12 @@ Subansiri-Loop-034
 
 ## Installation & Getting started
 
+```bash
 clone the repo
 cd into Subansiri-Loop-034
 npm install
+```
+
 
 ## Usage
 
