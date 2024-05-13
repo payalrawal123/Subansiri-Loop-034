@@ -243,11 +243,10 @@ npm run dev (for frontend)
 ```
 
 #### Pictures
-[(./frontend/src//assets/sr1.png)]
+[![dark theme](./frontend/src//assets/sr1.png)]
 
 
-
-[(./frontend/src//assets/sr2.png)]
+[![dark theme](./frontend/src//assets/sr2.png)]
 
 ## Credentials
 
