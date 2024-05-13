@@ -228,11 +228,9 @@ Subansiri-Loop-034
 
 ## Installation & Getting started
 
-Detailed instructions on how to install, configure, and get the project running.
-
-```bash
-
-```
+clone the repo
+cd into Subansiri-Loop-034
+npm install
 
 ## Usage
 
@@ -245,6 +243,8 @@ npm run dev (for frontend)
 ```
 
 #### Pictures
+[![dark theme](./frontend/src//assets/sr1.png)]
+[![dark theme](./frontend/src//assets/sr2.png)]
 
 ## Credentials
 
@@ -263,3 +263,13 @@ User Credential
 ## API Endpoints
 
 ## Technology Stack
+List and provide a brief overview of the technologies used in the project.
+
+- HTML
+- CSS
+- React
+- MongoDB
+- NodeJS
+- Tailwind
+
+
